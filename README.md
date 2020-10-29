@@ -7,6 +7,7 @@ Based on this modeling, MAGIC aims to assess the trans-ethnic genetic correlatio
 MAGIC is implemented in R statistical environment.
 # Example
 
+source
 
 
 
