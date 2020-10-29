@@ -8,9 +8,9 @@ MAGIC is implemented in R statistical environment.
 # Example
 ```ruby
 source("MAGIC_function.R")
-y <- read.table("y.txt",sep=""),head=T)
+BMI <- read.table("BMI.txt",sep=""),head=T)
 
-MAGIC(y,r0=0.5,r01=0.5)
+MAGIC(BMI,r0=0.5,r01=0.5)
 
 $rg
    m1       k           rg_mean     rg_median     r0_mean     r0_median     BCa1       BCa2        PB1         PB2         se_k        se_rg_mean     se_rg_median
