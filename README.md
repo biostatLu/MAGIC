@@ -21,11 +21,14 @@ rs1000940      0.008676    0.003615    0.0154      0.0018
 ...
 
 ```
-The summary statistics file should be at least four columns (i.e. BETA.x, SE.x, BETA.y and SE.y). 
+The summary statistics file should be at least four columns (i.e. BETA.x, SE.x, BETA.y and SE.y). BETA.x is the effect size of SNPs in one population and SE.x is their standard error; BETA.y is the effect size of SNPs in the other population and SE.y is their standard error.
+
 2.r0, e.g.,
 ```ruby
 r0=0.09833 #we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
 ```
+In practice, we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
+
 # Example
 ```ruby
 source("MAGIC_function.R")
