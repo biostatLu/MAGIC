@@ -12,6 +12,16 @@ SNP-level summary ststistics of two populations in terms of effect size and thei
 
 r0 means the correlation between &beta;<sub>i</sub> and &beta;<sub>j</sub> for a set of SNPs that are not associated with the trait in neither population. In practice, following previous work, we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
 
+1.Summary statistics, e.g.,
+```ruby
+               BETA.x      SE.x        BETA.y      SE.y
+rs1000096      0.003636    0.004739    -0.0144     0.0018
+rs10008104     0.003372    0.003579    0.0111      0.0018
+rs1000940      0.008676    0.003615    0.0154      0.0018
+...
+
+```
+
 
 # Example
 ```ruby
