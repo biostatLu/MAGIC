@@ -34,11 +34,11 @@ In practice, we calculate r0 via null SNPs of the trait in both populations with
 source("MAGIC_function.R")
 BMI <- read.table("BMI.txt",sep=""),head=T)
 
-MAGIC(BMI,r0=0.5,r01=0.5)
+MAGIC(BMI,r0=0.09833)
 
 $rg
-   m1       k           rg_mean     rg_median     r0_mean     r0_median     BCa1       BCa2        PB1         PB2         se_k        se_rg_mean     se_rg_median
-   968      0.81382     0.86679     0.86679       0.5         0.5           0.8203     0.86245     0.84141     0.89332     0.01264     0.0132         0.0132
+   m1       k           rg          r0            PB1         PB2         se_k        se_rg     
+   968      0.81382     0.89119     0.09833       0.86438     0.91686     0.01265     0.01372           
 
 
 
