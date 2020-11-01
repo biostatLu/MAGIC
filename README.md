@@ -40,7 +40,13 @@ $rg
    m1       k           rg          r0            PB1         PB2         se_k        se_rg     
    968      0.81382     0.89119     0.09833       0.86438     0.91686     0.01265     0.01372           
 
-
+#m1 is the number of the independent associated SNPs
+#k is the Pearson’s correlation
+#rg is the trans-ethnic genetic correlation
+#r0 is the correlation between &beta;<sub>i</sub> and &beta;<sub>j</sub> for a set of SNPs that are not associated with the trait in neither population. In practice, following previous work, we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
+#PB1-PB2 is 95% confidence intervals
+#se_k is the standard error of Pearson’s correlation
+#se_rg is the standard error of trans-ethnic genetic correlation
 
 ```
 
