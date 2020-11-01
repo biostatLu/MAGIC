@@ -21,8 +21,10 @@ rs1000940      0.008676    0.003615    0.0154      0.0018
 ...
 
 ```
-
-
+2.r0, e.g.,
+```ruby
+r0=0.09833 #we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
+```
 # Example
 ```ruby
 source("MAGIC_function.R")
