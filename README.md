@@ -10,7 +10,7 @@ MAGIC requires two types of input data:
 
 SNP-level summary ststistics of two populations in terms of effect size and their standard error are required as inputs.
 
-r0 means the correlation between   and   for a set of SNPs that are not associated with the trait in neither population.
+r0 means the correlation between &beta;<sub>i</sub> and &beta;<sub>j</sub> for a set of SNPs that are not associated with the trait in neither population. In practice, following previous work, we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
 
 
 # Example
