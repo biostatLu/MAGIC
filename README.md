@@ -50,3 +50,5 @@ $rg
 
 ```
 
+# Contact
+We are very grateful to any questions, comments, or bugs reports; and please contact [Ping Zeng](https://github.com/biostatpzeng) via zpstat@xzhmu.edu.cn.
