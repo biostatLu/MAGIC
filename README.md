@@ -8,9 +8,9 @@ MAGIC is implemented in R statistical environment.
 # Required input data
 MAGIC requires two types of input data:
 
-SNP-level summary ststistics of two populations in terms of effect size and their standard error as inputs.
+SNP-level summary ststistics of two populations in terms of effect size and their standard error are required as inputs.
 
-
+r0 means the correlation between   and   for a set of SNPs that are not associated with the trait in neither population.
 
 
 # Example
