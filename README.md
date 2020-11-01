@@ -5,6 +5,14 @@ MAGIC is a method for evaluating trans-ethnic genetic correlation of associated 
 Based on this modeling, MAGIC aims to assess the trans-ethnic genetic correlation, r<sub>g</sub>=Cor(&alpha;<sub>i</sub>,&alpha;<sub>j</sub>), of SNP genetic effects of the same trait between populations i (e.g. EAS) and j (e.g. EUR). It needs to emphasize that Pearson’s correlation, κ=Cor(&beta;<sub>i</sub>,&beta;<sub>j</sub>), calculated without the modification of the estimation error, is often biased towards zero, resulting in |κ| ≤ |r<sub>g</sub>|. This bias is also well known as correlation attenuation. The sampling error and confidence interval of rg in MAGIC are evaluated the Bootstrap approaches. As MAGIC only relies on a set of associated genetic variants, r<sub>g</sub> can be thus viewed as a local genetic correlation with respect to its global counterpart ρ<sub>g</sub> that can be estimated with the popcorn method.
 
 MAGIC is implemented in R statistical environment.
+# Required input data
+MAGIC requires two types of input data:
+
+SNP-level summary ststistics of two populations in terms of effect size and their standard error as inputs.
+
+
+
+
 # Example
 ```ruby
 source("MAGIC_function.R")
