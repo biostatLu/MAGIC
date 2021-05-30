@@ -1,8 +1,8 @@
-# MAGIC: Measurement-error adjusted local genetic correlation method
+# MAGIC: Measurement-error adjusted marginal genetic correlation method
 # Introduction
 **MAGIC** is a method for evaluating trans-ethnic genetic correlation of associated SNPs. Suppose we have yielded a set of uncorrected associated SNPs for a trait and let the estimated SNP marginal effect size on the trait be &beta;. Because of the finite sample size, &beta; trends to be intrinsic to estimation error compared to the true effect size α. To account for this uncertainty, we model &beta; within the measurement error framework with a signal-noise model: &beta;=&alpha;+ε, where ε is the measurement error which also reflects the estimation error.
 
-Based on this modeling, MAGIC aims to assess the trans-ethnic genetic correlation, r<sub>g</sub>=Cor(&alpha;<sub>i</sub>,&alpha;<sub>j</sub>), of SNP genetic effects of the same trait between populations i (e.g. EAS) and j (e.g. EUR). It needs to emphasize that Pearson’s correlation, κ=Cor(&beta;<sub>i</sub>,&beta;<sub>j</sub>), calculated without the modification of the estimation error, is often biased towards zero, resulting in |κ| ≤ |r<sub>g</sub>|. This bias is also well known as correlation attenuation. The sampling error and confidence interval of rg in MAGIC are evaluated the Bootstrap approaches. As MAGIC only relies on a set of associated genetic variants, r<sub>g</sub> can be thus viewed as a local genetic correlation with respect to its global counterpart ρ<sub>g</sub> that can be estimated with the popcorn method.
+Based on this modeling, MAGIC aims to assess the trans-ethnic genetic correlation, r<sub>g</sub>=Cor(&alpha;<sub>i</sub>,&alpha;<sub>j</sub>), of SNP genetic effects of the same trait between populations i (e.g. EAS) and j (e.g. EUR). It needs to emphasize that Pearson’s correlation, κ=Cor(&beta;<sub>i</sub>,&beta;<sub>j</sub>), calculated without the modification of the estimation error, is often biased towards zero, resulting in |κ| ≤ |r<sub>g</sub>|. This bias is also well known as correlation attenuation. The sampling error and confidence interval of rm in MAGIC are evaluated the Bootstrap approaches. As MAGIC only relies on a set of associated genetic variants, r<sub>g</sub> can be thus viewed as a local genetic correlation with respect to its global counterpart ρ<sub>g</sub> that can be estimated with the popcorn method.
 
 MAGIC is implemented in R statistical environment.
 # Required input data
@@ -32,22 +32,22 @@ In practice, we calculate r0 via null SNPs of the trait in both populations with
 # Example
 ```ruby
 source("MAGIC_function.R")
-BMI <- read.table("BMI.txt",sep="\t"),header=T)
+BMI <- read.table("BMI.txt",sep="\t",header=T)
 
 MAGIC(BMI,r0=0.09833)
 #Here, note that, the sampling error and confidence interval of rg are evaluated the Bootstrap approaches.
 
-$rg
-   m1       k           rg          r0            PB1         PB2         se_k        se_rg     
+$rm
+   m1       k           rm          r0            PB1         PB2         se_k        se_rm     
    968      0.81382     0.89119     0.09833       0.86438     0.91686     0.01265     0.01372           
 
 #m1 is the number of the independent associated SNPs
 #k is the Pearson’s correlation
-#rg is the trans-ethnic genetic correlation
+#rm is the trans-ethnic genetic correlation
 #r0 is the correlation for a set of SNPs that are not associated with the trait in neither population. In practice, following previous work, we calculate r0 via null SNPs of the trait in both populations with p values larger than 0.01 for each protein coding gene and employ the average across all the genes.
 #PB1-PB2 is 95% confidence intervals
 #se_k is the standard error of Pearson’s correlation
-#se_rg is the standard error of trans-ethnic genetic correlation
+#se_rm is the standard error of trans-ethnic genetic correlation
 
 ```
 
