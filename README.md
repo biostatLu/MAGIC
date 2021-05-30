@@ -32,7 +32,7 @@ In practice, we calculate r0 via null SNPs of the trait in both populations with
 # Example
 ```ruby
 source("MAGIC_function.R")
-BMI <- read.table("BMI.txt",sep=""),head=T)
+BMI <- read.table("BMI.txt",sep="\t"),header=T)
 
 MAGIC(BMI,r0=0.09833)
 #Here, note that, the sampling error and confidence interval of rg are evaluated the Bootstrap approaches.
