@@ -51,5 +51,8 @@ $rm
 
 ```
 
+# Cite
+Haojie Lu<sup>$</sup>, Ting Wang<sup>$</sup>, Jinhui Zhang, Shuo Zhang, Shuiping Huang and Ping Zeng<sup>#</sup> (2021). Evaluating genetic correlation of associated loci for complex diseases and traits between European and East Asian populations. Human Genetics, in press. [DOI: 10.1007/s00439-021-02299-8](https://link.springer.com/article/10.1007/s00439-021-02299-8)
+
 # Contact
 We are very grateful to any questions, comments, or bugs reports; and please contact [Ping Zeng](https://github.com/biostatpzeng) via zpstat@xzhmu.edu.cn.
