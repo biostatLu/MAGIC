@@ -35,7 +35,7 @@ source("MAGIC_function.R")
 BMI <- read.table("BMI.txt",sep="\t",header=T)
 
 MAGIC(BMI,r0=0.09833)
-#Here, note that, the sampling error and confidence interval of rg are evaluated the Bootstrap approaches.
+#Here, note that, the sampling error and confidence interval of rm are evaluated the Bootstrap approaches.
 
 $rm
    m1       k           rm          r0            PB1         PB2         se_k        se_rm     
